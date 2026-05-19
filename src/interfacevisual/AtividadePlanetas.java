@@ -105,59 +105,41 @@ public class AtividadePlanetas extends javax.swing.JFrame {
 
         double peso = Double.parseDouble(txtPeso.getText());
 
-        String planetas = cbPlanetas.getSelectedItem().toString();
+        String Planetas;
+        Planetas = cbPlanetas.getSelectedItem().toString();
 
-        switch (planetas) {
+        switch(Planetas){
             case "Mercúrio":
-
                 gravidade = 3.6;
-
                 break;
             case "Vênus":
-
                 gravidade = 8.7;
-
                 break;
             case "Terra":
-
                 gravidade = 9.8;
-
                 break;
             case "Marte":
-
                 gravidade = 3.7;
-
                 break;
             case "Júpiter":
-
                 gravidade = 24.79;
-
                 break;
             case "Saturno":
-
                 gravidade = 10.44;
-
                 break;
             case "Urano":
-
                 gravidade = 8.69;
-
                 break;
             case "Netuno":
-
                 gravidade = 11.15;
-
                 break;
             case "Lua":
-
                 gravidade = 1.6;
-
                 break;
         }
 
-        resultado = (peso / 10) * gravidade;
-
-        JOptionPane.showMessageDialog(null, "O seu peso em" + planetas + " é " + resultado + " kg.");
+        resultado = (peso / 10)*gravidade;
+        JOptionPane.showMessageDialog(null, resultado);
     }//GEN-LAST:event_btnCalcularPesoActionPerformed
 
     private void cbPlanetasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbPlanetasActionPerformed
